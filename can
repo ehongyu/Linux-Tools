@@ -1,0 +1,22 @@
+#!/bin/bash
+
+## Safe deletion, i.e., move a file/folder to a backup folder instead of totally deleting it
+
+if [ $# = 0 ]
+then
+	echo "Need at least one parameter"
+	exit
+fi
+
+dumpster="dumpster";
+suffix=`date +%s`
+target_folder="$HOME/$dumpster/$suffix"
+
+if [ ! -d $target_folder ]
+then
+	mkdir -p $target_folder
+	mv $@ $target_folder
+	echo "Moved $@ into folder $target_folder"
+else
+	echo "ERROR: $target_folder already existed !"
+fi
