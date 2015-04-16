@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-## similar find.pl, but it can replace an old string with a new one
+## similar to find.pl, but it can replace an old string with a new one
 
 @foundFiles = ();
 
