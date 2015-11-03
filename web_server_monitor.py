@@ -1,5 +1,7 @@
 ## You can run this script as a cron job to monitor the response code of remote web servers, like
 # * * * * * /usr/local/bin/python3 web_server_monitor.py https://www.yahoo.com
+#
+# If the response code is not 200, an alert will be sent to the specified recipient email addresses.
 
 import sys
 import requests
