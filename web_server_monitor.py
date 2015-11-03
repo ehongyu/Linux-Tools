@@ -1,5 +1,5 @@
 ## You can run this script as a cron job to monitor the response code of remote web servers, like
-# * * * * * /usr/local/bin/python3 web_server_monitor.py https://www.tradesy.com
+# * * * * * /usr/local/bin/python3 web_server_monitor.py https://www.yahoo.com
 
 import sys
 import requests
