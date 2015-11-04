@@ -11,7 +11,7 @@ from smtplib import SMTP
 def emailAlert(recipient, server, error):
     gmail_user = "service.monitor.hz@gmail.com"
     gmail_pwd = "zhanghongyu"
-    FROM = 'service.monitor.hz@gmail.com'
+    FROM = 'service.monitor.xyz@gmail.com'
     TO = recipient #must be a list
     SUBJECT = "SERVER ERROR: " + server
     TEXT = "Error code/message: " + error
@@ -34,7 +34,7 @@ def emailAlert(recipient, server, error):
 
 try:
     server = sys.argv[1];
-    recipient = ['mail@hongyu.org']
+    recipient = ['mail@xyz.org']
     r = requests.head(server)
     if r.status_code != 200 :
         emailAlert(recipient, server, str(r.status_code));
