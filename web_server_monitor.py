@@ -9,7 +9,7 @@ from smtplib import SMTP
 
 
 def emailAlert(recipient, server, error):
-    gmail_user = "service.monitor.hz@gmail.com"
+    gmail_user = "service.monitor.xyz@gmail.com"
     gmail_pwd = "zhanghongyu"
     FROM = 'service.monitor.xyz@gmail.com'
     TO = recipient #must be a list
