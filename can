@@ -15,7 +15,7 @@ target_folder="$HOME/$dumpster/$suffix"
 if [ ! -d $target_folder ]
 then
 	mkdir -p $target_folder
-	mv $@ $target_folder
+	mv "$@" $target_folder
 	echo "Moved $@ into folder $target_folder"
 else
 	echo "ERROR: $target_folder already existed !"
