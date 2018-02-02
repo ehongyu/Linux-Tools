@@ -1,0 +1,12 @@
+alias mv='mv -i'
+alias cp='cp -i'
+alias rm='rm -i'
+alias loc='find . -name'
+alias s=source
+alias ls='ls -G'
+alias l='ls -ltG'
+alias new='ls -lt | head -20'
+alias grep='grep -i'
+alias h='history | tail -20'
+alias diff='diff -W $(( $(tput cols) - 2 ))'
+alias clean_python_cache='find . -name "*.pyc" -exec rm -f {} \;'
