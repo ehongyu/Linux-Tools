@@ -11,6 +11,7 @@ alias his='history | tail -20'
 alias diff='diff -W $(( $(tput cols) - 2 ))'
 alias pretty_json='python -m json.tool'
 alias sumup="awk '{s+=\$1} END {print s}'"
+alias myps='ps -ef | grep $(whoami)'
 alias clean_python_cache='find . -name "*.pyc" -exec rm -f {} \;'
 alias j8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8`'
 alias j12='export JAVA_HOME=`/usr/libexec/java_home -v 12`'
